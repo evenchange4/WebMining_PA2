@@ -40,7 +40,7 @@ $ ./executePR.sh cs.stanford.2004-10.graph
 - [Some Facts about Spearman’s ρ](http://irlab.csie.ntu.edu.tw/wm2008/contrib/wm2008-rho.pdf)
 - [pagerank-tutorial](http://irlab.csie.ntu.edu.tw/wm2008/contrib/pagerank-tutorial.doc)
 
-# 助教問答大匯整
+# Q&A
 - evaluate PageRank program 跑出來的兩個參數：
 	- L1-norm is Sigma |xi-yi|
 	- Spearman's rank 請看http://irlab.csie.ntu.edu.tw/wm2008/contrib/wm2008-rho.pdf
