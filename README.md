@@ -65,3 +65,6 @@ for those nodes with zero out degree.
 - 請問IR programming hw2 pdf 內的link都不能下載(dataset等),那是要到哪下載?? thx!
 	- 所有需要的檔案都在tar.gz內
 - Lex Rank output格式 請忽略第一行的總行數
+- lexrank 結果 如果 pagerank 的值一樣，排序有差嗎
+- pagerank 的值有需要取到第幾位嗎
+
