@@ -78,7 +78,7 @@ class PageRank
 		filename = "#{File.dirname(@path)}/#{File.basename(@path)}.pagerank"
 		File.open(filename,"w") do |f|
 			@pagerank.delete_at(0) # skip index 0
-			f << "#{@pagerank.size}\n"
+			# f << "#{@pagerank.size}\n" # 忽略第一行
 			pagerank_hash = Hash.new
 			@pagerank.each_with_index {|value, index| pagerank_hash[index+1] = value }
 			pagerank_hash.sort_by {|k,v| v }.reverse.map {|x| f << "#{x[0]}:#{x[1]}\n" }

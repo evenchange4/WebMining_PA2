@@ -33,7 +33,7 @@ $ ./executePR.sh cs.stanford.2004-10.graph
 * 執行程式 LexRank
 
 ```
-$ ./executePR.sh cs.stanford.2004-10.graph
+$ ./executePR.sh news.sen
 ```
 
 # Reference
