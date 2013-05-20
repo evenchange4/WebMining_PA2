@@ -12,7 +12,7 @@ class PageRank
 	end
 
 	def pagerank
-		# compute dangling page
+		# find dangling page
 		@dangling_page = Array.new(@pagerank.size, true)
 		File.open(@path, "r").each do |line|
 			# parse each line of file
@@ -23,7 +23,6 @@ class PageRank
 			# 刪除有 outlink 的 page node
 			@dangling_page[node_id] = false
 		end
-		# p @dangling_page
 
 		puts ">> PageRanking..."
 		begin
@@ -54,7 +53,7 @@ class PageRank
 				end
 			end
 
-			# dumping factor
+			# consider dumping factor
 			@pagerank = @sum.map{|e| (1-@damp) + @damp*@sum_of_dangling + @damp*e }
 
 			# Euclidean distance for iterater
